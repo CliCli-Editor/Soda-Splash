@@ -1,6 +1,33 @@
 {
     "action": [
         {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "GET_CLIENT_ROLE"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "8e813569-a73f-4efa-9f2b-8d29ed3fb39e"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1754734596000422, 
+            "enable": true
+        }, 
+        {
             "action_type": "REQUEST_MALL_PLAYER_ADI_BY_NICKNAME", 
             "args_list": [
                 {
@@ -11,6 +38,27 @@
                 {
                     "arg_type": 100022, 
                     "args_list": [
+                        {
+                            "action_type": "CLEAR_TABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "TABLE", 
+                                                "队伍信息"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": "VARIABLE"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1284972552000002, 
+                            "enable": true
+                        }, 
                         {
                             "action_type": "REQUEST_MALL_TEAM_INF_BY_ADI", 
                             "args_list": [
