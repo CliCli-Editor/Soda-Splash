@@ -1,0 +1,242 @@
+{
+    "action": [
+        {
+            "action_type": "NEW_CAMERA_SET_YAW", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家参数", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "导航角", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 16066273500026, 
+            "enable": true, 
+            "op_arg": [
+                null
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "NEW_CAMERA_SET_PITCH", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家参数", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "俯仰角", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 16066273500027, 
+            "enable": true, 
+            "op_arg": [
+                null
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "NEW_CAMERA_SET_ROLL", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家参数", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "滚角", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 16066273500028, 
+            "enable": true, 
+            "op_arg": [
+                null
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "NEW_CAMERA_SET_DISTANCE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家参数", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "与焦点的距离", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 16066273500029, 
+            "enable": true, 
+            "op_arg": [
+                null
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "设置玩家{玩家参数}镜头俯仰角：{俯仰角}滚角：{滚角}导航角：{导航角}与焦点距离：{与焦点的距离}", 
+    "func_id": "ce5b6e8f13cf11ed9ea830d042f7e2bd", 
+    "func_name": "设置玩家镜头参数", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家参数", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "俯仰角", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "滚角", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "导航角", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "与焦点的距离", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "xGc2zxPPEe2dPzDQQvfivY", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1429135474, 
+    "trigger_name": "设置镜头参数", 
+    "valid": true, 
+    "var_data": [
+        {
+            "CAMERA": {}, 
+            "FLOAT": {
+                "与焦点的距离": 0.0, 
+                "俯仰角": 0.0, 
+                "导航角": 0.0, 
+                "滚角": 0.0
+            }, 
+            "NEW_TIMER": {}, 
+            "PLAYER": {
+                "玩家参数": 0
+            }
+        }, 
+        {
+            "与焦点的距离": 0, 
+            "俯仰角": 0, 
+            "导航角": 0, 
+            "滚角": 0, 
+            "玩家参数": 0
+        }, 
+        [
+            "与焦点的距离", 
+            "俯仰角", 
+            "导航角", 
+            "滚角", 
+            "玩家参数"
+        ]
+    ]
+}

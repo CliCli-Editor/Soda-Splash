@@ -1,0 +1,102 @@
+{
+    "action": [
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "GET_CLIENT_ROLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "ff3ca624-75ef-48b1-a158-1e115efbd8b6"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "FIND MATCH"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 916549671000002, 
+            "enable": true
+        }, 
+        {
+            "action_type": "DELETE_TIMER", 
+            "args_list": [
+                {
+                    "arg_type": 100181, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "NEW_TIMER", 
+                                "匹配计时"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 916549671000013, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "GET_CLIENT_ROLE"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        false
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "d9c6d57f-9d7c-49af-a9ec-9518edb1c4a6"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1872175117000042, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [], 
+            "element_id": 916549671000001, 
+            "enable": true, 
+            "event_type": "MALL_NOTIFY_CANCEL_MATCH"
+        }
+    ], 
+    "group_id": "wZGMq+nQEe+wGI-gojbZYv", 
+    "p_trigger_id": null, 
+    "trigger_id": 916549671, 
+    "trigger_name": "取消匹配", 
+    "valid": true, 
+    "var_data": [
+        {
+            "NEW_TIMER": {}
+        }, 
+        {}, 
+        []
+    ]
+}

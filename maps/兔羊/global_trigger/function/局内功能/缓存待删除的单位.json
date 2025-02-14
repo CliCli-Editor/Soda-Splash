@@ -1,0 +1,249 @@
+{
+    "action": [
+        {
+            "action_type": "UNIT_RELEASE_COMMAND", 
+            "args_list": [
+                {
+                    "arg_type": 100006, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_ENTITY", 
+                                "待删除单位", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 11
+                }, 
+                {
+                    "arg_type": 100216, 
+                    "args_list": [], 
+                    "sub_type": "UNIT_COMMAND_STOP"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 17761733420008, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false, 
+                false
+            ]
+        }, 
+        {
+            "action_type": "ADD_STATE", 
+            "args_list": [
+                {
+                    "arg_type": 100006, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_ENTITY", 
+                                "待删除单位", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 11
+                }, 
+                {
+                    "arg_type": 100075, 
+                    "args_list": [
+                        2097152
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 17761733420002, 
+            "enable": true
+        }, 
+        {
+            "action_type": "FORCE_TRANSMIT_UNIT", 
+            "args_list": [
+                {
+                    "arg_type": 100006, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_ENTITY", 
+                                "待删除单位", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 11
+                }, 
+                {
+                    "arg_type": 100004, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                0.0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                0.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "FLOAT_TO_POINT"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 17761733420004, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "SET_RECYCLE_ON_REMOVE", 
+            "args_list": [
+                {
+                    "arg_type": 100006, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_ENTITY", 
+                                "待删除单位", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 11
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 17761733420003, 
+            "enable": true
+        }, 
+        {
+            "action_type": "GROUP_ADD_UNIT", 
+            "args_list": [
+                {
+                    "arg_type": 100006, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_ENTITY", 
+                                "待删除单位", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 11
+                }, 
+                {
+                    "arg_type": 100026, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "UNIT_GROUP", 
+                                "缓存单位组", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 14
+                }
+            ], 
+            "bp": false, 
+            "element_id": 17761733420001, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "该操作将单位缓存起来（而不真正删除），后续从缓存单位组创建单位时将走复活逻辑，以提升性能", 
+    "func_des": "将{待删除单位}缓存到{缓存单位组}", 
+    "func_id": "a22edcf024ee11eda79b30d042f7e2bd", 
+    "func_name": "缓存待删除的单位", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "待删除单位", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "缓存单位组", 
+                true
+            ]
+        }
+    ], 
+    "group_id": 0, 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1776173342, 
+    "trigger_name": "缓存待删除的单位", 
+    "valid": true, 
+    "var_data": [
+        {
+            "UNIT_ENTITY": {
+                "待删除单位": null
+            }, 
+            "UNIT_GROUP": {
+                "缓存单位组": []
+            }
+        }, 
+        {
+            "待删除单位": 0, 
+            "缓存单位组": 0
+        }, 
+        [
+            "待删除单位", 
+            "缓存单位组"
+        ]
+    ]
+}

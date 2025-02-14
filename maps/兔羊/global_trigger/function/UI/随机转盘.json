@@ -1,0 +1,151 @@
+{
+    "action": [
+        {
+            "action_type": "HIDE_UI_COMP_WITH_ANIMATION", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        [
+                            "UI_COMP", 
+                            "初始化发光圈组"
+                        ], 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "位置前", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 13626656040030, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SHOW_UI_COMP_WITH_ANIMATION", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        [
+                            "PLAYER", 
+                            "玩家", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        [
+                            "UI_COMP", 
+                            "初始化发光圈组"
+                        ], 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "位置后", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 13626656040032, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "将玩家{玩家}的选英雄光标移动UI从{位置前}移动到{位置后}", 
+    "func_id": "93d53a4f166b11eda6a900ff9c9b7d1d", 
+    "func_name": "随机转盘", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "位置前", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "位置后", 
+                true
+            ]
+        }
+    ], 
+    "group_id": 0, 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1362665604, 
+    "trigger_name": "随机转盘", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "位置前": 0, 
+                "位置后": 0
+            }, 
+            "PLAYER": {
+                "玩家": 0
+            }, 
+            "UNIT_ENTITY": {}
+        }, 
+        {
+            "位置前": 0, 
+            "位置后": 0, 
+            "玩家": 0
+        }, 
+        [
+            "位置前", 
+            "位置后", 
+            "玩家"
+        ]
+    ]
+}

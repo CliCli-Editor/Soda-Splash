@@ -1,0 +1,136 @@
+{
+    "action": [
+        [
+            1354520741, 
+            "-lv1~9：玩家英雄升1~9级", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            2129711649, 
+            "-lv1~9：玩家英雄升1~9级", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1665850572, 
+            "-gm3：游戏模式变为非OMG的随机模式", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1929771869, 
+            "-gold：+9999999钱", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1098472285, 
+            "直接输入数字为锁定英雄编号，如 11  就是11号英雄，不需要横杠，输入0可以变回随机", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1984242370, 
+            "-mana：魔法无限，再输入一次取消", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1202970337, 
+            "-suicide：自杀", 
+            1881018485, 
+            "action_type"
+        ], 
+        [
+            1944177203, 
+            "-kill1~10：杀死指定玩家英雄，蓝色方1 3 5 7 9，红色方2 4 6 8 10", 
+            1881018485, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "BOOLEAN", 
+                                "调试模式"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 18810185700578, 
+            "enable": true
+        }, 
+        {
+            "action_type": "DISPLAY_INFO_TO_PLAYER", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "Test Mode"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        false
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 12728608070038, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "-lincygodliketestmode"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 17239123260001, 
+            "enable": true, 
+            "event_type": "ROLE_INPUT_MSG"
+        }
+    ], 
+    "group_id": "kiatLvzTEeyPHzDQQvfivf", 
+    "p_trigger_id": null, 
+    "trigger_id": 1881018485, 
+    "trigger_name": "说明", 
+    "valid": true, 
+    "var_data": [
+        {}, 
+        {}, 
+        []
+    ]
+}
